@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
+	freopen("bcount.in", "r", stdin);
+	freopen("bcount.out", "w", stdout);
 	int n=0,q=0,x=0,a=0,b=0,h=0,g=0,j=0;
 	vector<int> ID;
 	
