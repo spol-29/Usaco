@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-	ofstream cout ("cowsignal.out");
-	ifstream cin ("cowsignal.in");
+	// ofstream cout ("cowsignal.out");
+	// ifstream cin ("cowsignal.in");
 	int n,m,k;
 	cin>>m>>n>>k;
     for(int i=0; i<m; i++){
@@ -16,5 +16,4 @@ int main() {
 		    }
 		    cout<<endl;	
         }
-	}
-}
+	
