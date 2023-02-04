@@ -3,6 +3,7 @@ using namespace std;
 int main(){ 
 	int n,m,d,s; //n = number of people, m = number of milk, d = number of drinks, s = number of sick people
     cin >> n >> m >> d >> s; //input
+    
     for(int i = 0; i < d; i++){ //loop through all drinks
         int p,m,t; //person, milk, time
         cin >> p >> m >> t;
