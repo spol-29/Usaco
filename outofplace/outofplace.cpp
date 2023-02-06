@@ -22,3 +22,19 @@ int main()
 	}
 	cout << swaps - 1;
 }
+
+
+
+/*
+used algorithm of swapping: if the num cows are not equivalent 
+to the sorted array then it will output 1 less than the displaced value
+for example if the output is 4(swaps) then we would change it to 3
+because the original place of bessie is not in its correct spot.
+since bessie is not in its correct spot, we would have to swap her once initially
+and then swap her 3 times to get her in the correct spot. this creates 4 swaps.
+but we only have to swap her 3 times to get her in the correct spot.
+that is why we subtract 1 from the output.
+we use a for loop to check if the cows are in the correct spot by comparing the cows array
+to the sorted array. if they are not in the correct spot then we add 1 to the swaps variable.
+the swaps variable is the output.
+*/
