@@ -21,8 +21,7 @@ int main(){
         cin >> p >> t; //input
         sick.push_back(p); //push back person 
         sicktime.push_back(t); //push back time
-    }
-    //find the milk that was drank by the sick people
+    } 
     vector<int> sickmilk; //milk drank by sick people
     for(int i = 0; i < d; i++){
         if(people[i] == sick[i] && time < sicktime[i]){

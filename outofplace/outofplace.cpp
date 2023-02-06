@@ -7,6 +7,7 @@ int main()
 	freopen("outofplace.out", "w", stdout);
 	int n;
 	cin >> n;
+	int adjacent = n/2;
 	int cows[100], sorted[100];
 	for (int i = 0; i < n; i++){
 		cin >> cows[i];
@@ -19,6 +20,5 @@ int main()
 			swaps++;
 		}
 	}
-	cout << swaps - 1 << endl;
-	return 0;
+	cout << swaps - 1;
 }
