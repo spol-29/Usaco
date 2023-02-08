@@ -30,7 +30,7 @@ int main() {
 
 	int yes = 0;
 	for (int a1 = 0; a1 < animal_num; a1++) {
-		for (int a2 = a1 + 1; a2 < animal_num; a2++) {
+	for (int a2 = a1 + 1; a2 < animal_num; a2++) {
 			set<string> common = intersection(animals[a1], animals[a2]);
 			yes = max(yes, (int) common.size() + 1);
 		}
