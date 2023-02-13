@@ -38,7 +38,7 @@ void solve(){
     
     int tuition[MAX];
     int maxprofit = 0;
-    fill_n(tuition, MAX, 0);
+    fill_n(tuition, MAX, 0); //initialize the array with 0
     for(int i = 0; i < MAX; i++){
         tuition[i] = i+1 * cnt[i]; //i+1 is the tuition and cnt[i] is the value at the location of the tution
         maxprofit = max(maxprofit, tuition[i]); //maxprofit is the max value in the array
