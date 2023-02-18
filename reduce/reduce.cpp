@@ -57,11 +57,9 @@ Analysis analyze(vector<int> indicesToSkip) {
 
   return a;
 }
-
 int main() {
   freopen("reduce.in", "r", stdin);
-  freopen("reduce.out", "w", stdout);
-    
+  freopen("reduce.out", "w", stdout); 
   cin >> n;
   for (int i = 0; i < n; i++) {
     cin >> x[i];
@@ -87,11 +85,10 @@ int main() {
 	      }
 	      Analysis analysis4 = analyze(pointsOnBorder3);
 	      bestArea = min(bestArea, analysis4.area);
-	    }
+	      }
        }
       }
     }
   }
-
 cout << bestArea;
 }
