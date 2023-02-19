@@ -1,65 +1,55 @@
-// #include<bits/stdc++.h>
-// using namespace std;
-// void solve();
-
-// void stream(){
-//     freopen("college.in", "r", stdin);
-//     freopen("college.out", "w", stdout);
-// }
-
-// int main(){
-//     stream();
-//     ios_base::sync_with_stdio(0);
-//     cin.tie(0);
-//     cout.tie(0);
-//     solve();
-// }
-
-// void solve(){
-//     int n;
-//     cin >> n;
-//     int MaxTuition[n];
-//     for(int i = 1; i <= n; i++){
-//         cin >> MaxTuition[i];
-//     }
-//     int MAX = 0;
-//     for(int i = 0; i < n; i++){
-//         MAX = max(MAX, MaxTuition[i]);
-//     }
-//     int cnt[MAX];
-//     fill_n(cnt, MAX, 0);
-//     for(int i = 1; i < MAX; i++){
-//         for(int j = 0; j < n; j++){
-//             if(i <= MaxTuition[j]){
-//                 cnt[i]++;
-//             }
-//         }
-//     }
-    
-//     int tuition[MAX];
-//     int maxprofit = 0;
-//     fill_n(tuition, MAX, 0); //initialize the array with 0
-//     for(int i = 0; i < MAX; i++){
-//         tuition[i] = i+1 * cnt[i]; //i+1 is the tuition and cnt[i] is the value at the location of the tution
-//         maxprofit = max(maxprofit, tuition[i]); //maxprofit is the max value in the array
-//     }
-//     for(int i = 0; i < MAX; i++){
-//         if(tuition[i] == maxprofit){
-//             cout << maxprofit << " " << i+1;
-//             break;
-//         }
-//     }
-// }
-
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
-    vector<pair<int, int> > a;
+void solve();
 
-//write scripts to check if they did c++ beginner
-//add monthly parent teacher conferences
-//they need to opt that they did c++ beginner before
-}//sign up form(competitive programming needs to be done after c++ begginer)
+void stream(){
+    freopen("college.in", "r", stdin);
+    freopen("college.out", "w", stdout);
+}
+
+int main(){
+    stream();
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    solve();
+}
+
+void solve(){
+    int n;
+    cin >> n;
+    int MaxTuition[n];
+    for(int i = 1; i <= n; i++){
+        cin >> MaxTuition[i];
+    }
+    int MAX = 0;
+    for(int i = 0; i < n; i++){
+        MAX = max(MAX, MaxTuition[i]);
+    }
+    int cnt[MAX];
+    fill_n(cnt, MAX, 0);
+    for(int i = 1; i < MAX; i++){
+        for(int j = 0; j < n; j++){
+            if(i <= MaxTuition[j]){
+                cnt[i]++;
+            }
+        }
+    }
+    
+    int tuition[MAX];
+    int maxprofit = 0;
+    fill_n(tuition, MAX, 0); //initialize the array with 0
+    for(int i = 0; i < MAX; i++){
+        tuition[i] = i+1 * cnt[i]; //i+1 is the tuition and cnt[i] is the value at the location of the tution
+        maxprofit = max(maxprofit, tuition[i]); //maxprofit is the max value in the array
+    }
+    for(int i = 0; i < MAX; i++){
+        if(tuition[i] == maxprofit){
+            cout << maxprofit << " " << i+1;
+            break;
+        }
+    }
+}
 /* Commentary & explanation of code(English): solution didn't work but this is the way to solve the problem
 only one max profit is possible print the location of the max profit after the max profit
 if there are multiple max profits print the one with the lowest tuition(this was specified in the problem)
