@@ -14,6 +14,7 @@ int main() {
 			    	cout<<s[j];
 			    }
 		    }
-		    cout<<endl;	
+		    cout<<"\n";	
         }
-	
+	}
+} 
